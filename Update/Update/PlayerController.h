@@ -4,13 +4,13 @@
 class PlayerController : public Object
 {
 public:
-	void Start();
-	void Update();
-	void LateUpdate();
-	void Render();
-	void Destroy();
+	virtual void Start();
+	virtual void Update();
+	virtual void LateUpdate();
+	virtual void Render();
+	virtual void Destroy();
 public:
 	PlayerController();
-	~PlayerController();
+	virtual ~PlayerController();
 };
 

@@ -1,10 +1,10 @@
 #pragma once
 
-class PlayerController;
+class Object;
 class Scene
 {
 private:
-	PlayerController* Player;
+	Object* Player;
 public:
 	void Start();
 	void Update();
