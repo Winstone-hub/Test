@@ -34,6 +34,6 @@ int main(void)
 	Enemys.push_back(new Enemy(3));
 
 	Objects.insert(make_pair("Enemy", Enemys));
-
+	// ** Objects : Ãâ·Â ¼÷Á¦.
 	return 0;
 }
