@@ -16,12 +16,11 @@ public:
 	virtual int GetNumber() = 0;
 
 public:
-	Object() {}
-	Object(string _name) : Name(_name) {}
-	Object(string _name, int _i)
-	{
-		Name = "Enemy" + to_string(_i);
-	}
+	Object() : Name("Enemy") {}
+
+	Object(string _name) : Name(_name) { }
+
+	Object(string _name, int _i) : Name(_name + to_string(_i)) {}
 	~Object() {}
 };
 
@@ -72,13 +71,13 @@ int main(void)
 
 
 
-	/*
+	
 	map<int, Object*> Objects;
 
 	for (int i = 0; i < 100; ++i)
-		Objects.insert(make_pair(i, new Enemy("Enemy", i)));
-
-
+	{
+		Objects.insert(make_pair(i, new Enemy("Enemy" + to_string(i))));
+	}
 
 	for (map<int, Object*>::iterator iter = Objects.begin();
 		iter != Objects.end(); ++iter)
@@ -91,9 +90,7 @@ int main(void)
 
 	cout << endl << iter->first << endl;
 	cout << iter->second->Name << endl;
-	*/
-
-
+	
 
 	return 0;
 }
