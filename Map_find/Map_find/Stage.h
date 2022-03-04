@@ -1,8 +1,11 @@
 #pragma once
 #include "Object.h"
 
+class Object;
 class Stage : public Object
 {
+private:
+	Object* m_pPlayer;
 public:
 	virtual void Start()override;
 	virtual void Update()override;

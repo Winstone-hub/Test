@@ -12,6 +12,10 @@ public:
 		return Instance;
 	}
 private:
+
+public:
+
+private:
 	SceneManager();
 public:
 	~SceneManager();
