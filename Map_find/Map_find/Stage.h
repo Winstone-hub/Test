@@ -1,8 +1,8 @@
 #pragma once
-#include "Object.h"
+#include "Scene.h"
 
 class Object;
-class Stage : public Object
+class Stage : public Scene
 {
 private:
 	Object* m_pPlayer;

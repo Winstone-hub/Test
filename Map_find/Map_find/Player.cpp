@@ -22,7 +22,7 @@ void Player::Update()
 
 void Player::Render()
 {
-
+	cout << "Player" << endl;
 }
 
 void Player::Release()

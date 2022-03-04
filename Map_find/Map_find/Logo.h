@@ -1,7 +1,7 @@
 #pragma once
-#include "Object.h"
+#include "Scene.h"
 
-class Logo : public Object
+class Logo : public Scene
 {
 public:
 	virtual void Start()override;
