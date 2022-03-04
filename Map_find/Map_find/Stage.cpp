@@ -23,11 +23,6 @@ void Stage::Start()
 
 void Stage::Update()
 {
-	if (Time + 5000 < GetTickCount64())
-	{
-		SceneManager::GetInstance()->SetScene(SCENEID_EXIT);
-	}
-	
 	m_pPlayer->Update();
 }
 
