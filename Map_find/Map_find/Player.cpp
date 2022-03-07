@@ -45,7 +45,7 @@ void Player::Render()
 	CursorManager::SetCursorPosition(
 		Info.Position.x,
 		Info.Position.y);
-	cout << "Player";
+	cout << "P";
 }
 
 void Player::Release()

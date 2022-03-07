@@ -27,18 +27,22 @@ void Stage::Start()
 		ObjectManager::GetInstance()->AddObject(m_pPlayer);
 	}
 
+
+
 	m_pEnemys = ObjectManager::GetInstance()->FindList("Enemy");
 
 	if (m_pEnemys == nullptr)
 	{
 		for (int i = 0; i < 10; ++i)
 		{
-			srand(GetTickCount64()); // ** 랜덤 함수 초기화
+			srand(GetTickCount64() * (i + 1)); // ** 랜덤 함수 초기화
 
 			Object* pEnemy = ObjectFactory::CreateObject<Enemy>(
 				rand()%99, rand() % 27);
 			ObjectManager::GetInstance()->AddObject(pEnemy);
 		}
+
+		m_pEnemys = ObjectManager::GetInstance()->FindList("Enemy");
 	}
 }
 
