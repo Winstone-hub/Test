@@ -6,7 +6,7 @@ class CursorManager
 public:
 	static void SetCursorPosition(Vector3 _Position)
 	{
-		COORD Pos = { _Position.x, _Position.y };
+		COORD Pos = { (SHORT)_Position.x, (SHORT)_Position.y };
 
 		SetConsoleCursorPosition(
 			GetStdHandle(STD_OUTPUT_HANDLE), Pos);
@@ -14,7 +14,7 @@ public:
 
 	static void SetCursorPosition(float _x, float _y)
 	{
-		COORD Pos = { _x, _y };
+		COORD Pos = { (SHORT)_x, (SHORT)_y };
 
 		SetConsoleCursorPosition(
 			GetStdHandle(STD_OUTPUT_HANDLE), Pos);

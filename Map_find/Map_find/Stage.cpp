@@ -35,10 +35,10 @@ void Stage::Start()
 	{
 		for (int i = 0; i < 10; ++i)
 		{
-			srand(GetTickCount64() * (i + 1)); // ** 랜덤 함수 초기화
+			srand(int(GetTickCount64() * (i + 1))); // ** 랜덤 함수 초기화
 
 			Object* pEnemy = ObjectFactory::CreateObject<Enemy>(
-				rand()%99, rand() % 27);
+				float(rand()%99), float(rand() % 27));
 			ObjectManager::GetInstance()->AddObject(pEnemy);
 		}
 
