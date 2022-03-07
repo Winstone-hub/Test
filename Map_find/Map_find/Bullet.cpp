@@ -12,7 +12,7 @@ Bullet::~Bullet()
 
 void Bullet::Start()
 {
-
+	strKey = "Bullet";
 }
 
 void Bullet::Update()

@@ -8,7 +8,7 @@ Menu::Menu()
 
 Menu::~Menu()
 {
-
+	Release();
 }
 
 void Menu::Start()
@@ -18,7 +18,7 @@ void Menu::Start()
 
 void Menu::Update()
 {
-	if (Time + 5000 < GetTickCount64())
+	if (GetAsyncKeyState('S'))
 	{
 		SceneManager::GetInstance()->SetScene(SCENEID_STAGE);
 	}
@@ -26,7 +26,7 @@ void Menu::Update()
 
 void Menu::Render()
 {
-	cout << "Menu" << endl;
+
 }
 
 void Menu::Release()
