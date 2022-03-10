@@ -17,7 +17,7 @@ void Player::Start()
 
 	Info.Position = Vector3(10.0f, 10.0f, 0.0f);
 	Info.Rotation = Vector3(0.0f, 0.0f, 0.0f);
-	Info.Scale = Vector3(0.0f, 0.0f, 0.0f);
+	Info.Scale = Vector3(2.0f, 1.0f, 0.0f);
 }
 
 void Player::Update()
@@ -45,7 +45,7 @@ void Player::Render()
 	CursorManager::SetCursorPosition(
 		Info.Position.x,
 		Info.Position.y);
-	cout << "P";
+	cout << "PP";
 }
 
 void Player::Release()

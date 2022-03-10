@@ -1,5 +1,6 @@
 #include "Logo.h"
 #include "SceneManager.h"
+#include "CursorManager.h"
 
 Logo::Logo()
 {
@@ -26,7 +27,8 @@ void Logo::Update()
 
 void Logo::Render()
 {
-
+	CursorManager::SetCursorPosition(1, 1);
+	cout << "Logo";
 }
 
 void Logo::Release()

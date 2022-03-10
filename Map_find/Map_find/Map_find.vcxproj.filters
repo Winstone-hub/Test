@@ -55,6 +55,12 @@
     <Filter Include="소스 파일\02. Scene\Stage">
       <UniqueIdentifier>{8b404eba-e66c-44ec-af70-51db52e6303f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\99. Manager\CursorManager">
+      <UniqueIdentifier>{7f2780b1-e495-40f8-8920-072ce118fd32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\99. Manager\CollisionManager">
+      <UniqueIdentifier>{bed84890-6619-4e7d-97a0-f788223ec912}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -141,7 +147,10 @@
       <Filter>소스 파일\99. Manager\ObjectFactory</Filter>
     </ClInclude>
     <ClInclude Include="CursorManager.h">
-      <Filter>소스 파일\99. Manager</Filter>
+      <Filter>소스 파일\99. Manager\CursorManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionManager.h">
+      <Filter>소스 파일\99. Manager\CollisionManager</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

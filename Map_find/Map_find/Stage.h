@@ -5,6 +5,7 @@ class Object;
 class Stage : public Scene
 {
 private:
+	int iNumber;
 	Object* m_pPlayer;
 	list<Object*>* m_pEnemys;
 public:

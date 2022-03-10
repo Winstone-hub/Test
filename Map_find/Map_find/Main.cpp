@@ -1,33 +1,32 @@
 #include "MainUpdate.h"
 
-// ** [Singleton]  [O]
-// ** 생성자 & 소멸자  [O]
-// ** 오버로딩 & 오버라이딩  [O]
-// ** 순수가상 함수  [O]
-// ** 소멸자 버츄얼  [O]
-// ** 맵  [O]
+
+// ** FrameTime [o]
+// ** Collision 
 
 
-
-
-
-// ** FrameTime
-// ** Collision
+// ** 싱글톤 삭제.
+// ** 프로토타입 패턴.
 
 
 
 int main(void)
 {
+	ULONGLONG Time = GetTickCount64(); // 1000분의 1초
+
 	MainUpdate Main;
 	Main.Start();
 
 	while (true)
 	{
-		system("cls");
+		if (Time + 50 < GetTickCount64())
+		{
+			Time = GetTickCount64();
+			system("cls");
 
-
-		Main.Update();
-		Main.Render();
+			Main.Update();
+			Main.Render();
+		}
 	}
 
 	return 0;

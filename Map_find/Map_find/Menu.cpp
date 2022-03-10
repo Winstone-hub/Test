@@ -1,5 +1,6 @@
 #include "Menu.h"
 #include "SceneManager.h"
+#include "CursorManager.h"
 
 Menu::Menu()
 {
@@ -26,7 +27,8 @@ void Menu::Update()
 
 void Menu::Render()
 {
-
+	CursorManager::SetCursorPosition(1, 1);
+	cout << "Menu";
 }
 
 void Menu::Release()

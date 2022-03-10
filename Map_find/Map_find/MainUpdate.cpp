@@ -1,5 +1,7 @@
 #include "MainUpdate.h"
 #include "SceneManager.h"
+#include "CursorManager.h"
+
 
 MainUpdate::MainUpdate()
 {
